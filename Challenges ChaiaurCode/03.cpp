@@ -2,7 +2,22 @@
 // Challenge 1: If Statement
 // Write a program that asks the user for their favorite tea. 
 //If they choose "Oolong," print a message saying, "You have excellent taste!"
+#include <iostream>
+#include <string>
+using namespace std;
 
+int main() {
+    string teaOrder ;
+    cout << "Give me your order : ";
+    getline(cin,teaOrder);
+    if (teaOrder == "Oolong Tea")
+    {
+        cout << "You have excellent taste!" << endl;
+        
+    }
+    
+    return 0;
+}
 // Challenge 2: If-Else Statement
 // Create a program that asks the user for their age. 
 //If the user is older than 18, allow them to proceed with purchasing tea; otherwise, print a message saying they are too young to purchase.
