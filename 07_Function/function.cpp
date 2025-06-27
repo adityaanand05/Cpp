@@ -75,3 +75,12 @@ void car(string)
     getline(cin, carname);
     cout << "You chossed " << carname;
 }
+
+// To avoid overloading it will take car defalt value ; for case like "car();"
+void car(string carname="Tesla")
+{
+    
+    cout << "Enter name of car : ";
+    getline(cin, carname);
+    cout << "You chossed " << carname;
+}
