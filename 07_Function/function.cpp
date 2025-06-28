@@ -2,13 +2,25 @@
 #include <string>
 using namespace std;
 
-// normal function
+// normal function 
 int sum(int a, int b)
 {
     int add;
     add = a + b;
     cout << "Sum = " << add;
     return add;
+}
+
+//call by value
+void pourChai(int cups) {
+  cups = cups + 1;  // Modifies local copy
+  cout << "Poured " << cups << " cups of chai!" << endl;
+}
+
+// call by referance
+void refillChai(int &cups) {  // Pass by reference
+  cups += 2;
+  cout << "Refilled to " << cups << " cups of chai!" << endl;
 }
 
 // recursion
@@ -79,8 +91,8 @@ void car(string)
 // To avoid overloading it will take car defalt value ; for case like "car();"
 void car(string carname="Tesla")
 {
-    
-    cout << "Enter name of car : ";
-    getline(cin, carname);
-    cout << "You chossed " << carname;
+    cout<<"great choice"<<endl;
+    cout << "You chossed " << carname<<endl;
+    cout<<"thank you have a nice day"<<endl;
+    cout<<"come again"<<endl;
 }
