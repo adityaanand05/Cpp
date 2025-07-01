@@ -39,5 +39,16 @@ int main() {
 
     */
 
+    /*
+        Pointer Arithmetics
+        int A[5]={7,8,9,12,5};
+        int* p=A;  int* q = &A[3];
+        1. p++
+        2. p--
+        3. p+=2 or p = p+2
+        4. p-=2 or p = p-2
+        5. d = q-p
+    */
+
     return 0;
 }
